@@ -11,13 +11,6 @@ public class VarDefStatement extends Object
 	
 	public String toString()
 	{
-		//write this such that it rebuilds the String version
-		//of the original statement.  You MAY NOT just use the
-		//store string variable theStmt.
-		for(i = 0; i < p.length(); i++)
-		{
-			System.out.println(p.charAt((i)));
-		}
+		return this.theVarExpr.toString() + " = " + this.theMathExpr.toString() + ";";
 	}
 }
-
